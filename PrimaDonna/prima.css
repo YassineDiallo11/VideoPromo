@@ -1,0 +1,514 @@
+/* Styles généraux */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    background-color: #696969;
+    color: #fff;
+    padding: 10px 0;
+    
+        width: 100vw;
+        height: 10vh;
+        align-items: center;
+        display: flex;
+        
+       
+}
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.menu a {
+    color: #fff;
+    font-size: 10px;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-family: 'Kelsi', sans-serif;
+}
+.menu a:hover {
+    background-color: red;
+    font-family: 'Kelsi 1', sans-serif;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Styles spécifiques pour les sections */
+/* Animation en javascript pour les sections*/
+section {
+    width: 100vw;
+    height:200vh;
+    padding: 20px;
+    opacity: 0; /* La section est initialement invisible */
+            transition: opacity 0.5s ease, transform 1s ease; /* Animation de transition pour l'opacité et le déplacement */
+            transform: translateX(30%); /* La section est déplacée de 100% de sa largeur vers la droite */
+}
+
+
+
+    
+/*Sections attribué class "section1" ACCUEIL */
+
+#accueil h1{
+    box-shadow: 10px 10px 10px red;
+    background-color: #696969;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Kelsi', sans-serif;
+    color: #ffffff;
+    
+}
+#accueil img{
+   padding-bottom: 120px;
+}
+
+#accueil div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding:30px ;
+
+}
+
+/*Sections attribué class "section2" MEMBRES */
+#membres h2{
+    text-align: center;
+    font-size:2.5em;
+    font-family: 'Kelsi', sans-serif;
+    color:#000000;
+    text-shadow: 3px 3px 3px #ffffff;
+}
+.membres{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   padding-bottom: 20px;
+   
+}
+.membre{
+    background-color:#696969;
+    border-radius: 50px;
+    opacity: 60%;
+    display: flex;
+    
+    h3{
+        font-family: 'Kelsi', sans-serif;
+        font-size: 2em;
+        color: #ffffff;
+        padding-top: 60px;
+    }
+}
+.membre:hover{
+    opacity: 100%;
+    
+    h3{
+        font-family: 'Kelsi 1', sans-serif;
+    }
+}
+/*Sections attribué class "section3" LES PHOTOS */
+#photos h2{
+    text-align: center;
+    font-size:2.5em;
+    font-family: 'Kelsi', sans-serif;
+    color:#000000;
+    text-shadow: 3px 3px 3px #ffffff;
+}
+.photos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    
+    img{
+        width: 100%;
+        border-radius: 20px;
+    }
+}
+
+
+/*Sections attribué class "section4" VIDEOS */
+#videos{
+    h2{
+        text-align: center;
+        font-size: 2.5em;
+        font-family: 'Kelsi', sans-serif;
+        color: #000000;
+        text-shadow: 3px 3px 3px #ffffff;
+    }
+    h3{
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 2em;
+        color: #ffffff;
+    }
+    
+    div{
+        background-color: #ff0000;
+        width: 100%;
+        height: 40%;
+        border-radius: 20px;
+    }
+    p{
+        
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1,8em;
+        color: #ffffff;
+        
+    }
+    img{
+        width: 50%;
+        margin-left: 100px;
+        
+    }
+
+    .videoYoutube{
+        width: 90vw;
+        
+    
+    }
+    
+}
+
+
+
+/*Sections attribué class "section5" PROJET DE FIN D'ETDUDE TIM */
+
+#projet  {
+
+    h2{
+    text-align: center;
+    font-size: 2.5em;
+    font-family: 'Kelsi', sans-serif;
+    color: #000000;
+    text-shadow: 3px 3px 3px #ffffff;
+    padding-top: 40px;
+}
+
+div{
+    background-color: #696969;
+    width: 100%;
+    height: 30%;
+    border-radius: 20px;
+}
+p{
+    padding-top: 20%;
+    margin-left: 10px;
+    font-family: 'Kelsi 1', sans-serif;
+    font-size: 2em;
+    color: #ffffff;
+    
+}
+img{
+    width: 50%;
+    margin-left: 100px;
+    
+}
+
+}
+
+footer {
+   
+    background-color: #696969;
+    padding: 20px;
+    text-align: center;
+}
+
+.social-icons {
+    list-style-type: none;
+    padding: 0;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* Style spécifique pour les icônes de téléphone */
+.social-icons .fas.fa-phone {
+    transform: rotate(90deg);
+}
+
+
+
+
+
+/*FOOTER */
+
+/* ..............................Media queries pour la conception adaptative........................................... */
+@media only screen and (max-width: 768px) {
+   
+   
+    /*Nav attribué class "navOrdinateur" sera cacheé pour le format telephone*/
+   body:nth-child(1){
+    background: none;
+       
+
+    }
+.navOrdinateur {
+    display: none;
+}
+
+}
+@media only screen and (min-width: 768px) {
+
+    
+   /*Section Nav*/
+   .menu a{
+    font-size: 1.5em;
+}
+/*Sections attribué class "section1" ACCUEIL */
+#accueil h1{
+
+    font-size: 2.5em;
+    
+    
+}
+
+/*Sections attribué class "section2" MEMBRES */
+.membre{
+    
+    width: 80%;
+    margin-left: 80px;
+
+    h3{
+        margin: 50px;
+    }
+}
+
+/*Sections attribué class "section3" LES PHOTOS */
+
+.photos{
+
+    
+    img{
+        width: 60vw;
+        height: 45vh;
+        margin-left: 20vw;
+    }
+}
+
+
+
+ 
+/*Sections attribué class "section4" VIDEOS */
+#videos{
+    div{
+        height: 25%;
+    }
+}
+/*Sections attribué class "section5" PROJET DE FIN D'ETDUDE TIM */
+#projet {
+    div{
+        width: 100%;
+        height: 30%;
+    }
+
+    p{
+        padding-top: 10px;
+        margin-left: 25%;
+        
+    }
+    img{
+        width: 30%;
+        margin-left: 35%;
+        
+    }
+
+    h2{
+        text-shadow: 3px 3px 3px #ff0000;
+    }
+    }
+ }
+ 
+ @media only screen and (min-width: 1024px) {
+   
+   
+    /*Nav attribué class "navOrdinateur" sera cacheé pour le format telephone*/
+.navTelephone {
+    display: none;
+}
+
+/*Section Nav */
+
+header{
+    width: 10vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 2;
+}
+
+.navOrdinateur{
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+
+    a{
+        
+        position: relative;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-bottom: 30px;
+        font-family: 'Kelsi', sans-serif;
+       
+    }
+
+    a:hover{
+        background-color: #ff0000;
+        font-family: 'Kelsi 1', sans-serif;
+        
+    }
+}
+/*Adaptation de l'animation en fonction de la taille de l'écran */
+/* Styles spécifiques pour les sections */
+/* Animation en javascript pour les sections*/
+section {
+    width:fit-content 80vw;
+    height:200vh;
+    padding: 20px;
+    opacity: 0; /* La section est initialement invisible */
+            transition: opacity 0.5s ease, transform 1s ease; /* Animation de transition pour l'opacité et le déplacement */
+            transform: translateX(-40%); /* La section est déplacée de 100% de sa largeur vers la gauche */
+}
+
+/*Sections attribué class "section1" ACCUEIL */
+#accueil h1{
+    
+  width: 60vw;
+  font-family: 'Kelsi', sans-serif; 
+    
+}
+#accueil img{
+   width: 40vw;
+    padding-bottom: 100px;
+}
+
+/*Sections attribué class "section2" MEMBRES */
+.membres{
+   
+    padding-bottom: 20px;
+    
+}
+.membre{
+    display: flex;
+    width: 60vw;
+    margin-left: 20vw;
+
+    
+
+    h3{
+        margin: 50px;
+    }
+}
+
+.membre:hover{
+    scale: 1.1;
+}
+
+#membres h2{
+    font-size: 4em;
+    padding-top: 40px;
+    text-shadow: 3px 3px 3px #ff0000;
+    
+
+ }
+
+/*Sections attribué class "section3" LES PHOTOS */
+#photos h2{
+    font-size: 4em;
+    padding-top: 40px;
+    text-shadow: 3px 3px 3px #ffffff;
+
+}
+
+.photos{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    
+    
+    img{
+        
+        width: 40vw;
+        height: 40vh;
+    
+    }
+    
+ }
+
+/*Sections attribué class "section4" VIDEOS */
+#videos{
+    h2{
+        font-size: 4em;
+        padding-top: 40px;
+        text-shadow: 3px 3px 3px #ffffff;
+    }
+    
+    .videoYoutube{
+        display: flex;
+        width: 60vw;
+        height: 60vh;
+        margin-left: 20vw;
+        padding-top: 20px;
+    }
+    div{
+       
+        display: flex;
+        flex-direction: column;
+        width: 60vw;
+        height: 60vh;
+        margin-left: 20vw;
+
+        p{
+            font-size: large;
+        }
+    }
+
+}
+
+/*Sections attribué class "section5" PROJET DE FIN D'ETDUDE TIM */
+
+#projet{
+    h2{
+        font-size: 4em;
+        padding-top: 40px;
+        text-shadow: 3px 3px 3px #ffffff;
+    }
+    div{
+        width: 60vw;
+        height: 30%;
+        margin-left: 20vw;
+    }
+    p{
+        padding-top: 10px;
+        margin-left: 25%;
+        
+    }
+    img{
+        width: 30%;
+        margin-left: 35%;
+ }
+
+}
+ }
